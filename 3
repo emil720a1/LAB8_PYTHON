@@ -1,0 +1,6 @@
+
+text = input()
+from collections import Counter
+counter = Counter(text)
+filtered = {k: v for k, v in counter.items() if v > 1}
+print(filtered)
